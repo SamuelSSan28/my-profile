@@ -1,9 +1,5 @@
 import React from "react";
 
-//import stock
-import stock from "../img/image1.jpg";
-
-
 class Portfolio extends React.Component {
   constructor() {
     super();
