@@ -1,15 +1,19 @@
 import React from "react";
-import imageOverlay from "../img/earth.jpg";
-
+import Animate from 'react-smooth';
+import Particles from 'react-particles-js';
+import particles from './particles.js';
+import './style.css'
 class Contact extends React.Component {
   render() {
     return (
-      <section
-        className="paralax-mf footer-paralax bg-image sect-mt4 route"
-        style={{ backgroundImage: "url(" + imageOverlay + ")" }}
-      >
-        <div className="overlay-mf"></div>
-        <div className="container">
+      <section     
+        className="paralax-mf  bg-image sect-mt4 route"     
+        style={{ position: 'relative', overflow: "hidden",backgroundColor:"#007bff" }}
+      >              
+        <div style={{ position: 'absolute'}}>
+          <Particles height="100vh" width="100vw" params={particles} />
+        </div>
+        <div className="container"  >
           <div className="row">
             <div className="col-sm-12">
               <div className="contact-mf">
@@ -21,7 +25,7 @@ class Contact extends React.Component {
                       </div>
                       <div>
                         <form
-                          action="https://formspree.io/xdoeonlo"
+                          action="https://formspree.io/f/xrgrgplr"
                           method="POST"
                           className="contactForm"
                         >
@@ -109,28 +113,13 @@ class Contact extends React.Component {
                           <br />
                           Simply fill the from and send me an email.
                         </p>
-                        {/* <!-- <ul class="list-ico">
-                                <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                                <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                                <li><span class="ion-email"></span> contact@example.com</li>
-                                </ul> --> */}
+                       
                       </div>
                       <div className="socials">
-                        <ul>
+                        <ul>                      
                           <li>
                             <a
-                              href=""
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-codepen"></i>
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href=""
+                              href="https://github.com/SamuelSSan28"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -141,7 +130,7 @@ class Contact extends React.Component {
                           </li>
                           <li>
                             <a
-                              href=""
+                              href="https://www.linkedin.com/in/samuel-santos-5217831aa/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -157,18 +146,8 @@ class Contact extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <footer>
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12">
-                <div className="copyright-box">
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+          </div>        
+        </div>    
       </section>
     );
   }

@@ -1,8 +1,8 @@
 import React from "react";
 import $ from "jquery";
 
-import logo1 from "../img/male1.png";
-import logo2 from "../img/male.png";
+import logo1 from "../img/rebel3.png";
+import logo2 from "../img/rebel4.png";
 
 class Navbar extends React.Component {
   constructor() {
@@ -81,16 +81,17 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav
+      <nav 
         className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
         id="mainNav"
+       
       >
-        <div className="container">
-          <a className="navbar-brand js-scroll" href="#page-top">
+        <div className="container" >
+          <a className="navbar-brand js-scroll" href="#page-top"  >
             <img
               src={this.state.logo}
               alt="logo"
-              style={{ maxWidth: "100px" }}
+              style={{ maxWidth: "100px",maxHeight:"50px" }}
             />
           </a>
           <button
@@ -112,22 +113,22 @@ class Navbar extends React.Component {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#home">
+                <a className="nav-link js-scroll active" href="#home" style={{fontSize:20}}>
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#about">
+                <a className="nav-link js-scroll" href="#about" style={{fontSize:20}}>
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#work">
+                <a className="nav-link js-scroll" href="#work" style={{fontSize:20}}>
                   Work
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#contact">
+                <a className="nav-link js-scroll" href="#contact" style={{fontSize:20}}>
                   Contact
                 </a>
               </li>
