@@ -17,26 +17,14 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './libs/easing.js';
 import 'lightbox2/dist/js/lightbox.min.js';
 
-//import components
-import Navbar from './components/navbar.jsx';
-import Intro from './components/intro.jsx';
-import About from './components/about.jsx';
-import Portfolio from './components/portfolio.jsx';
-import Contact from './components/contact.jsx';
-import BackToTop from './components/back-top.jsx';
-import Preloader from './components/preloader';
+import { BrowserRouter } from 'react-router-dom';
 
+import RoutesComponent from './routes';
 
 
 ReactDOM.render(
-    <React.Fragment>
-        <Navbar />
-        <Intro />
-        <About />
-        <Portfolio />
-        <Contact />
-        <BackToTop />
-        <Preloader />
-    </React.Fragment>,
+    <BrowserRouter>
+            <RoutesComponent />
+  </BrowserRouter>
+   ,
 document.getElementById('root'));
-
