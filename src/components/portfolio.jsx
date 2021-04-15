@@ -21,6 +21,14 @@ class Portfolio extends React.Component {
           image: 'https://i.imgur.com/kRV4C1R.png',
           href:"http://sistemas.custopiaui.org/processos"
         },
+        {
+          id:"2A",
+          tecnologias:"Pewee(ORM Python), Instagram-we-api(Javascript), Html-to-image(Javascript), Selenium(Python)",
+          title: 'Leis Teresina - CamaraBot',
+          summary: "It's a project developed with the purpose of following the drafting of Teresina's laws in real time. The program uses Scrapping to extract information from the Teresina City Hall website and, from an HTML page, generates images with the data received to post to the instagram account @leisteresina.",
+          image: 'https://i.imgur.com/PEmjwkD.jpeg',
+          href:"https://github.com/SamuelSSan28/Camara_bot/edit/master/readme.md"
+        },
       
       ]
     }
